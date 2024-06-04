@@ -1,0 +1,95 @@
+Generating Simulation Top for Benchmark add
+BENCHMARK   : add
+Inst Num    : 14
+PEC_DURATION: 1e-9
+CPU_FILE    : cpu_bonus.pex.netlist
+Simulation Top Generated Successfully.
+hspice -d -i add_sim.sp -o add 
+Using: /tools/synopsys/hspice/R-2020.12-SP2/hspice/linux64/hspice  -d -i 'add_sim.sp' -o add 
+
+>info:         ***** hspice job concluded
+python ./scripts/peripheral_sim.py add.lis
+************* EE213 MINI CPU *************
+[92m> [0m 2 4 6 8 
+******************************************
+BENCHMARK   : add
+FREQ(Hz)    : 250000000.0
+RUNTIME(ns) : 5.97e-08
+POWER(W)    : 0.00027308
+******************************************
+Generating Simulation Top for Benchmark jump
+BENCHMARK   : jump
+Inst Num    : 18
+PEC_DURATION: 1e-9
+CPU_FILE    : cpu_bonus.pex.netlist
+Simulation Top Generated Successfully.
+hspice -d -i jump_sim.sp -o jump 
+Using: /tools/synopsys/hspice/R-2020.12-SP2/hspice/linux64/hspice  -d -i 'jump_sim.sp' -o jump 
+
+>info:         ***** hspice job concluded
+python ./scripts/peripheral_sim.py jump.lis
+************* EE213 MINI CPU *************
+[92m> [0m Y E S 
+******************************************
+BENCHMARK   : jump
+FREQ(Hz)    : 250000000.0
+RUNTIME(ns) : 4.7697e-08
+POWER(W)    : 0.0002646
+******************************************
+Generating Simulation Top for Benchmark load_store
+BENCHMARK   : load_store
+Inst Num    : 21
+PEC_DURATION: 1e-9
+CPU_FILE    : cpu_bonus.pex.netlist
+Simulation Top Generated Successfully.
+hspice -d -i load_store_sim.sp -o load_store 
+Using: /tools/synopsys/hspice/R-2020.12-SP2/hspice/linux64/hspice  -d -i 'load_store_sim.sp' -o load_store 
+
+>info:         ***** hspice job concluded
+python ./scripts/peripheral_sim.py load_store.lis
+************* EE213 MINI CPU *************
+[92m> [0m 7 7 
+******************************************
+BENCHMARK   : load_store
+FREQ(Hz)    : 250000000.0
+RUNTIME(ns) : 8.7706e-08
+POWER(W)    : 0.00027833
+******************************************
+Generating Simulation Top for Benchmark hello_world
+BENCHMARK   : hello_world
+Inst Num    : 27
+PEC_DURATION: 1e-9
+CPU_FILE    : cpu_bonus.pex.netlist
+Simulation Top Generated Successfully.
+hspice -d -i hello_world_sim.sp -o hello_world 
+Using: /tools/synopsys/hspice/R-2020.12-SP2/hspice/linux64/hspice  -d -i 'hello_world_sim.sp' -o hello_world 
+
+>info:         ***** hspice job concluded
+python ./scripts/peripheral_sim.py hello_world.lis
+************* EE213 MINI CPU *************
+[92m> [0m H e l l o   W o r l d ! 
+******************************************
+BENCHMARK   : hello_world
+FREQ(Hz)    : 250000000.0
+RUNTIME(ns) : 1.117e-07
+POWER(W)    : 0.00028894
+******************************************
+Generating Simulation Top for Benchmark bonus
+BENCHMARK   : bonus
+Inst Num    : 18
+PEC_DURATION: 1e-9
+CPU_FILE    : cpu_bonus.pex.netlist
+Simulation Top Generated Successfully.
+hspice -d -i bonus_sim.sp -o bonus 
+Using: /tools/synopsys/hspice/R-2020.12-SP2/hspice/linux64/hspice  -d -i 'bonus_sim.sp' -o bonus 
+
+>info:         ***** hspice job concluded
+python ./scripts/peripheral_sim.py bonus.lis
+************* EE213 MINI CPU *************
+[92m> [0m E E 2 1 3 
+******************************************
+BENCHMARK   : bonus
+FREQ(Hz)    : 250000000.0
+RUNTIME(ns) : 7.5699e-08
+POWER(W)    : 0.00029199
+******************************************
