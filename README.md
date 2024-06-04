@@ -1,4 +1,3 @@
-# EE213
-*The repository of EE213 Digital Integrated Circuit II, 2023 Fall, Shanghaitech Univ.*
+# EE213 Project
 
-*It should be private before the end of the course*
+*The repository of EE213 Digital Integrated Circuit II Project, 2023 Fall, Shanghaitech Univ.*
